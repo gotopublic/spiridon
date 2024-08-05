@@ -387,6 +387,9 @@ isString = function (val) {
     }
     return false;
 };
+isObject = function (val) {
+    return val instanceof Object && val.constructor === Object;
+};
 isEmpty = function (data) {
     if (data === null || typeof data === 'undefined') {
         return true;
